@@ -74,7 +74,7 @@ export default function Projects() {
             <div className="flex flex-col items-center">
               <StaticImage
                 formats={["png"]}
-                loading="lazy"
+                loading="eager"
                 src="../../images/fc_home.png"
                 alt="family-connect-member-app-home"
                 className="w-96"
@@ -82,7 +82,7 @@ export default function Projects() {
 
               <StaticImage
                 formats={["png"]}
-                loading="lazy"
+                loading="eager"
                 src="../../images/fc_vitals.png"
                 alt="family-connect-member-app-home"
                 className="w-96"
@@ -143,7 +143,7 @@ export default function Projects() {
             <div className="flex flex-col items-center">
               <StaticImage
                 formats={["png"]}
-                loading="lazy"
+                loading="eager"
                 src="../../images/spot1.png"
                 alt="fit-insights-candidates"
                 className="mt-6"
@@ -151,7 +151,7 @@ export default function Projects() {
 
               <StaticImage
                 formats={["png"]}
-                loading="lazy"
+                loading="eager"
                 src="../../images/spot2.png"
                 alt="fit-insights-dashboard"
                 className="mt-6"
@@ -196,7 +196,7 @@ export default function Projects() {
             <div className="flex flex-col items-center">
               <StaticImage
                 formats={["png"]}
-                loading="lazy"
+                loading="eager"
                 src="../../images/fitinsights2.png"
                 alt="fit-insights-candidates"
                 className="mt-6"
@@ -204,7 +204,7 @@ export default function Projects() {
 
               <StaticImage
                 formats={["png"]}
-                loading="lazy"
+                loading="eager"
                 src="../../images/fitinsights1.png"
                 alt="fit-insights-dashboard"
                 className="mt-6"
