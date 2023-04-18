@@ -73,15 +73,17 @@ export default function Projects() {
           <Expand>
             <div className="flex flex-col items-center">
               <StaticImage
+                formats={["png"]}
                 loading="lazy"
-                src="img/fc_home.png"
+                src="../../images/fc_home.png"
                 alt="family-connect-member-app-home"
                 className="w-96"
               />
 
               <StaticImage
+                formats={["png"]}
                 loading="lazy"
-                src="img/fc_vitals.png"
+                src="../../images/fc_vitals.png"
                 alt="family-connect-member-app-home"
                 className="w-96"
               />
@@ -140,15 +142,17 @@ export default function Projects() {
           <Expand>
             <div className="flex flex-col items-center">
               <StaticImage
+                formats={["png"]}
                 loading="lazy"
-                src="img/spot1.png"
+                src="../../images/spot1.png"
                 alt="fit-insights-candidates"
                 className="mt-6"
               />
 
               <StaticImage
+                formats={["png"]}
                 loading="lazy"
-                src="img/spot2.png"
+                src="../../images/spot2.png"
                 alt="fit-insights-dashboard"
                 className="mt-6"
               />
@@ -191,15 +195,17 @@ export default function Projects() {
           <Expand>
             <div className="flex flex-col items-center">
               <StaticImage
+                formats={["png"]}
                 loading="lazy"
-                src="img/fitinsights2.png"
+                src="../../images/fitinsights2.png"
                 alt="fit-insights-candidates"
                 className="mt-6"
               />
 
               <StaticImage
+                formats={["png"]}
                 loading="lazy"
-                src="img/fitinsights1.png"
+                src="../../images/fitinsights1.png"
                 alt="fit-insights-dashboard"
                 className="mt-6"
               />
