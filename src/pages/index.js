@@ -27,7 +27,7 @@ const IndexPage = () => (
           src="../images/profile.png"
           loading="eager"
           quality={60}
-          formats={["auto", "webp", "avif"]}
+          formats={["png"]}
           alt="profile-picture"
           className="aspect-square border-2 border-slate-600 rounded-full"
         />
