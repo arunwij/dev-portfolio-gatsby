@@ -1,121 +1,135 @@
-import * as React from "react"
-import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-
-import Layout from "../components/layout"
+import * as React from "react"
+import Badge from "../components/Badge"
+import IconAws from "../components/IconAws"
+import IconCurlyBrace from "../components/IconCurlyBrace"
+import IconDb from "../components/IconDb"
+import IconNodeJs from "../components/IconNodeJs"
+import IconReact from "../components/IconReact"
+import IconRedux from "../components/IconRedux"
+import IconTypescript from "../components/IconTypescript"
+import Contact from "../components/sections/Contact"
+import Projects from "../components/sections/Projects"
+import WorkExperience from "../components/sections/WorkExperience"
 import Seo from "../components/seo"
-import * as styles from "../components/index.module.css"
-
-const links = [
-  {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-  },
-  {
-    text: "Examples",
-    url: "https://github.com/gatsbyjs/gatsby/tree/master/examples",
-    description:
-      "A collection of websites ranging from very basic to complex/complete that illustrate how to accomplish specific tasks within your Gatsby sites.",
-  },
-  {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Learn how to add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-  },
-  {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
-    description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
-  },
-]
-
-const samplePageLinks = [
-  {
-    text: "Page 2",
-    url: "page-2",
-    badge: false,
-    description:
-      "A simple example of linking to another page within a Gatsby site",
-  },
-  { text: "TypeScript", url: "using-typescript" },
-  { text: "Server Side Rendering", url: "using-ssr" },
-  { text: "Deferred Static Generation", url: "using-dsg" },
-]
-
-const moreLinks = [
-  { text: "Join us on Discord", url: "https://gatsby.dev/discord" },
-  {
-    text: "Documentation",
-    url: "https://gatsbyjs.com/docs/",
-  },
-  {
-    text: "Starters",
-    url: "https://gatsbyjs.com/starters/",
-  },
-  {
-    text: "Showcase",
-    url: "https://gatsbyjs.com/showcase/",
-  },
-  {
-    text: "Contributing",
-    url: "https://www.gatsbyjs.com/contributing/",
-  },
-  { text: "Issues", url: "https://github.com/gatsbyjs/gatsby/issues" },
-]
-
-const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
 
 const IndexPage = () => (
-  <Layout>
-    <div className={styles.textCenter}>
-      <StaticImage
-        src="../images/example.png"
-        loading="eager"
-        width={64}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt=""
-        style={{ marginBottom: `var(--space-3)` }}
-      />
-      <h1>
-        Welcome to <b>Gatsby!</b>
-      </h1>
-      <p className={styles.intro}>
-        <b>Example pages:</b>{" "}
-        {samplePageLinks.map((link, i) => (
-          <React.Fragment key={link.url}>
-            <Link to={link.url}>{link.text}</Link>
-            {i !== samplePageLinks.length - 1 && <> · </>}
-          </React.Fragment>
-        ))}
-        <br />
-        Edit <code>src/pages/index.js</code> to update this page.
-      </p>
+  <main className="container py-5 px-5 mx-auto max-w-screen-sm h-100">
+    <div className="flex flex-row">
+      <div className="flex flex-col flex-1 justify-center items-start pr-5">
+        <h1 className="text-4xl tracking-wide font-medium">Aruna Wijerathna</h1>
+        <h2 className="text-2xl text-slate-400">
+          Software Engineer in Sri Lanka
+        </h2>
+      </div>
+      <div className="flex-1">
+        <StaticImage
+          src="../images/profile.png"
+          loading="eager"
+          // width={64}
+          quality={60}
+          formats={["auto", "webp", "avif"]}
+          alt="profile-picture"
+          className="aspect-square border-2 border-slate-600 rounded-full"
+        />
+      </div>
     </div>
-    <ul className={styles.list}>
-      {links.map(link => (
-        <li key={link.url} className={styles.listItem}>
-          <a
-            className={styles.listItemLink}
-            href={`${link.url}${utmParameters}`}
-          >
-            {link.text} ↗
-          </a>
-          <p className={styles.listItemDescription}>{link.description}</p>
-        </li>
-      ))}
-    </ul>
-    {moreLinks.map((link, i) => (
-      <React.Fragment key={link.url}>
-        <a href={`${link.url}${utmParameters}`}>{link.text}</a>
-        {i !== moreLinks.length - 1 && <> · </>}
-      </React.Fragment>
-    ))}
-  </Layout>
+    <div className="mt-10 flex flex-wrap gap-3">
+      <Badge
+        label="Software Engineer"
+        renderIconStart={({ className }) => {
+          return <IconCurlyBrace className={`${className} text-red-500`} />
+        }}
+      />
+      <Badge
+        label="Serverless Developer"
+        renderIconStart={({ className }) => {
+          return <IconCurlyBrace className={`${className} text-red-500`} />
+        }}
+      />
+      <Badge
+        label="Node.js"
+        renderIconStart={({ className }) => {
+          return (
+            <IconNodeJs className={`${className} w-5 mr-2 text-green-600`} />
+          )
+        }}
+      />
+      <Badge
+        label="React"
+        renderIconStart={({ className }) => {
+          return <IconReact className={`${className} w-5 mr-2 text-blue-400`} />
+        }}
+      />
+      <Badge
+        label="Redux"
+        renderIconStart={({ className }) => {
+          return (
+            <IconRedux className={`${className} w-5 mr-2 text-violet-500`} />
+          )
+        }}
+      />
+      <Badge
+        label="TypeScript"
+        renderIconStart={({ className }) => {
+          return (
+            <IconTypescript className={`${className} w-4 mr-2 text-blue-600`} />
+          )
+        }}
+      />
+      <Badge
+        label="MongoDB"
+        renderIconStart={({ className }) => {
+          return <IconDb className={`${className} w-4 mr-2 text-green-500`} />
+        }}
+      />
+      <Badge
+        label="DynamoDB"
+        renderIconStart={({ className }) => {
+          return <IconDb className={`${className} w-4 mr-2 text-blue-500`} />
+        }}
+        // link={
+        //   new URL(
+        //     "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html"
+        //   )
+        // }
+      />
+      <Badge
+        label="NoSQL"
+        renderIconStart={({ className }) => {
+          return <IconDb className={`${className} w-4 mr-2 text-red-400`} />
+        }}
+      />
+      <Badge
+        label="SQL"
+        renderIconStart={({ className }) => {
+          return <IconDb className={`${className} w-4 mr-2 text-orange-400`} />
+        }}
+      />
+      <Badge
+        label="AWS"
+        renderIconStart={({ className }) => {
+          return <IconAws className={`${className} w-4 mr-2 text-orange-500`} />
+        }}
+      />
+    </div>
+    <p className="mt-8">
+      Hey there, it's great to meet you! My name is Aruna, and I'm thrilled to
+      be here as an experienced software engineer. I have a passion for creating
+      innovative solutions that solve real-world problems, and I'm excited to
+      bring that same level of enthusiasm and expertise to your project. With a
+      strong track record of designing successful solutions for multiple
+      clients, I'm confident that I can deliver high-quality results for you
+      too. So if you're ready to take your next big project to the next level,
+      let's work together to turn your vision into reality!
+    </p>
+
+    <div className="mt-8">
+      <WorkExperience />
+      <Projects />
+      <Contact />
+    </div>
+  </main>
 )
 
 /**
@@ -123,6 +137,11 @@ const IndexPage = () => (
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="Home" />
+export const Head = () => (
+  <Seo
+    title="Aruna Wijerathna"
+    description="Aruna Wijerathna is expert Software Engineer in React | Node.js | Typescript | AWS | DynamoDB | MongoDB | Serverless with more than 5 years of experience"
+  />
+)
 
 export default IndexPage
