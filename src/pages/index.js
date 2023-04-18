@@ -26,7 +26,6 @@ const IndexPage = () => (
         <StaticImage
           src="../images/profile.png"
           loading="eager"
-          // width={64}
           quality={60}
           formats={["auto", "webp", "avif"]}
           alt="profile-picture"

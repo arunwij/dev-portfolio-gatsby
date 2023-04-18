@@ -5,6 +5,7 @@ import Section from "../Section"
 import SectionTitle from "../SectionTitle"
 import Expand from "../Expand"
 import Link from "../Link"
+import { StaticImage } from "gatsby-plugin-image"
 
 const badgeClassName = "text-slate-900 bg-gray-200 border-gray-200"
 
@@ -71,13 +72,15 @@ export default function Projects() {
 
           <Expand>
             <div className="flex flex-col items-center">
-              <img
+              <StaticImage
+                loading="lazy"
                 src="img/fc_home.png"
                 alt="family-connect-member-app-home"
                 className="w-96"
               />
 
-              <img
+              <StaticImage
+                loading="lazy"
                 src="img/fc_vitals.png"
                 alt="family-connect-member-app-home"
                 className="w-96"
@@ -136,13 +139,15 @@ export default function Projects() {
 
           <Expand>
             <div className="flex flex-col items-center">
-              <img
+              <StaticImage
+                loading="lazy"
                 src="img/spot1.png"
                 alt="fit-insights-candidates"
                 className="mt-6"
               />
 
-              <img
+              <StaticImage
+                loading="lazy"
                 src="img/spot2.png"
                 alt="fit-insights-dashboard"
                 className="mt-6"
@@ -185,13 +190,15 @@ export default function Projects() {
 
           <Expand>
             <div className="flex flex-col items-center">
-              <img
+              <StaticImage
+                loading="lazy"
                 src="img/fitinsights2.png"
                 alt="fit-insights-candidates"
                 className="mt-6"
               />
 
-              <img
+              <StaticImage
+                loading="lazy"
                 src="img/fitinsights1.png"
                 alt="fit-insights-dashboard"
                 className="mt-6"
