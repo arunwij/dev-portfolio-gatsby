@@ -3,7 +3,7 @@ import { useState } from "react"
 import * as React from "react"
 
 export default function Expand({ children }: { children: ReactNode }) {
-  const [isExpanded, setExpanded] = useState<boolean>(true)
+  const [isExpanded, setExpanded] = useState<boolean>(false)
 
   const handleExpand = () => {
     setExpanded(!isExpanded)
