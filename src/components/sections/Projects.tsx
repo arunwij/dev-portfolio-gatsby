@@ -74,6 +74,7 @@ export default function Projects() {
             <div className="flex flex-col items-center">
               <StaticImage
                 formats={["png"]}
+                quality={75}
                 loading="lazy"
                 src="../../images/fc_home.png"
                 alt="family-connect-member-app-home"
@@ -82,6 +83,7 @@ export default function Projects() {
 
               <StaticImage
                 formats={["png"]}
+                quality={75}
                 loading="lazy"
                 src="../../images/fc_vitals.png"
                 alt="family-connect-member-app-home"
@@ -143,6 +145,7 @@ export default function Projects() {
             <div className="flex flex-col items-center">
               <StaticImage
                 formats={["png"]}
+                quality={75}
                 loading="lazy"
                 src="../../images/spot1.png"
                 alt="fit-insights-candidates"
@@ -151,6 +154,7 @@ export default function Projects() {
 
               <StaticImage
                 formats={["png"]}
+                quality={75}
                 loading="lazy"
                 src="../../images/spot2.png"
                 alt="fit-insights-dashboard"
@@ -196,6 +200,7 @@ export default function Projects() {
             <div className="flex flex-col items-center">
               <StaticImage
                 formats={["png"]}
+                quality={75}
                 loading="lazy"
                 src="../../images/fitinsights2.png"
                 alt="fit-insights-candidates"
@@ -204,6 +209,7 @@ export default function Projects() {
 
               <StaticImage
                 formats={["png"]}
+                quality={75}
                 loading="lazy"
                 src="../../images/fitinsights1.png"
                 alt="fit-insights-dashboard"
