@@ -76,7 +76,7 @@ export default function Projects() {
                 </span>{" "}
                 <p className="text-sm">
                   Ampd subscription dashboard where users can subscribe and
-                  pledge funds to their favorite creators, developers. This
+                  pledge funds to their favourite creators, developers. This
                   platform uses Ampd ID as the authentication solution.
                 </p>
               </li>
