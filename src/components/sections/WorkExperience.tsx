@@ -12,10 +12,22 @@ export default function WorkExperience() {
           <ul className="list-disc pl-5">
             <li>
               <div className="mb-4">
+                <h2 className="font-bold text-lg">Technical Lead</h2>
+                <h3>2023 August - Present</h3>
+                <Link
+                  href="https://www.creativesoftware.com/"
+                  className="text-green-700 text-sm font-semibold"
+                >
+                  <h3>Creative Software</h3>
+                </Link>
+              </div>
+            </li>
+            <li>
+              <div className="mb-4">
                 <h2 className="font-bold text-lg">
                   Technical Lead (Associate)
                 </h2>
-                <h3>2021 Jul - Present</h3>
+                <h3>2021 Jul - 2023 Jul</h3>
                 <Link
                   href="https://www.deepdatainsight.com/"
                   className="text-green-700 text-sm font-semibold"

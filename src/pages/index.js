@@ -47,6 +47,12 @@ const IndexPage = () => (
         }}
       />
       <Badge
+        label="Solutions Architect"
+        renderIconStart={({ className }) => {
+          return <IconCurlyBrace className={`${className} text-red-500`} />
+        }}
+      />
+      <Badge
         label="Node.js"
         renderIconStart={({ className }) => {
           return (
@@ -55,7 +61,25 @@ const IndexPage = () => (
         }}
       />
       <Badge
+        label="Next.js"
+        renderIconStart={({ className }) => {
+          return <IconReact className={`${className} w-5 mr-2 text-blue-400`} />
+        }}
+      />
+      <Badge
+        label="Remix.run"
+        renderIconStart={({ className }) => {
+          return <IconReact className={`${className} w-5 mr-2 text-blue-400`} />
+        }}
+      />
+      <Badge
         label="React"
+        renderIconStart={({ className }) => {
+          return <IconReact className={`${className} w-5 mr-2 text-blue-400`} />
+        }}
+      />
+      <Badge
+        label="Tailwindcss"
         renderIconStart={({ className }) => {
           return <IconReact className={`${className} w-5 mr-2 text-blue-400`} />
         }}
@@ -113,14 +137,13 @@ const IndexPage = () => (
       />
     </div>
     <p className="mt-8">
-      Hey there, it's great to meet you! My name is Aruna, and I'm thrilled to
-      be here as an experienced software engineer. I have a passion for creating
-      innovative solutions that solve real-world problems, and I'm excited to
-      bring that same level of enthusiasm and expertise to your project. With a
-      strong track record of designing successful solutions for multiple
-      clients, I'm confident that I can deliver high-quality results for you
-      too. So if you're ready to take your next big project to the next level,
-      let's work together to turn your vision into reality!
+      Hello there! I'm Aruna, a software engineer who's really into crafting
+      innovative solutions for real-world challenges. My journey in this field
+      is fueled by a mix of curiosity, creativity, and a strong drive for
+      excellence. I love turning ideas into something impactful. With a track
+      record of working on diverse projects and delivering top-notch results,
+      I'm all set to help take your next project from good to great. Ready to
+      make something amazing together? Let’s make it happen!
     </p>
 
     <div className="mt-8">

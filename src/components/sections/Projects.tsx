@@ -16,6 +16,93 @@ export default function Projects() {
       <SectionTitle label="Projects" />
       <div className="mt-6">
         <div className="border rounded-lg p-5">
+          <h2 className="font-bold text-xl">Ampd Platform</h2>
+          <label className="font-bold text-sm text-green-700 inline-flex items-center leading-9">
+            <IconRole className="w-3 mr-1" />
+            Technical Lead, Full Stack Engineer
+          </label>
+          <div className="mt-4 flex flex-wrap gap-3">
+            <Badge label="Next.js" size="sm" className={badgeClassName} />
+            <Badge label="Tailwindcss" size="sm" className={badgeClassName} />
+            <Badge label="Typescript" size="sm" className={badgeClassName} />
+            <Badge label="Lit Framework" size="sm" className={badgeClassName} />
+            <Badge
+              label="Serverless Framework"
+              size="sm"
+              className={badgeClassName}
+            />
+            <Badge label="Node.js" size="sm" className={badgeClassName} />
+            <Badge label="DynamoDB" size="sm" className={badgeClassName} />
+            <Badge label="API Gateway" size="sm" className={badgeClassName} />
+            <Badge label="Code Build" size="sm" className={badgeClassName} />
+            <Badge label="Amplify" size="sm" className={badgeClassName} />
+            <Badge label="S3" size="sm" className={badgeClassName} />
+          </div>
+          <p className="mt-4">
+            AMPD aims to fill the gap in recurring income streams for a wide
+            range of content creators on Cardano (Blockchain), from artists to
+            developers, enabling them to monetize and grow their audience in the
+            web3 world. I was able to work with ampd team in three different
+            solutions.
+            <ol className="py-2 space-y-2">
+              <li>
+                <Link
+                  href="https://www.ampd.co/"
+                  target="_blank"
+                  className="text-green-700 hover:underline font-semibold uppercase"
+                >
+                  Ampd Landing Page
+                </Link>{" "}
+                <p className="text-sm">
+                  Develop bespoke responsive landing page for Ampd.
+                </p>
+              </li>
+              <li>
+                <Link
+                  href="https://id.ampd.co/"
+                  target="_blank"
+                  className="text-green-700 hover:underline font-semibold uppercase"
+                >
+                  Ampd ID
+                </Link>{" "}
+                <p className="text-sm">
+                  Web 3 Authentication solution for Cardano blockchain
+                  applications.
+                </p>
+              </li>
+              <li>
+                <span className="font-semibold text-green-700 uppercase">
+                  Ampd Sub
+                </span>{" "}
+                <p className="text-sm">
+                  Ampd subscription dashboard where users can subscribe and
+                  pledge funds to their favorite creators, developers. This
+                  platform uses Ampd ID as the authentication solution.
+                </p>
+              </li>
+            </ol>
+          </p>
+
+          <h5 className="font-semibold mt-2">Key Responsibilities</h5>
+          <ul className="list-disc pl-4 text-sm">
+            <li>
+              Communicate and collaborate with offshore development team to
+              identify technical requirements.
+            </li>
+            <li>Define project tasks and prioritize them.</li>
+            <li>Application architecture design.</li>
+            <li>Database design.</li>
+            <li>Manage Development, Staging and Production infrastructure.</li>
+            <li>Setting up and managing deployment pipelines.</li>
+            <li>UI development.</li>
+            <li>API development.</li>
+            <li>Produce technical documentations.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="mt-6">
+        <div className="border rounded-lg p-5">
           <h2 className="font-bold text-xl">Family Connect</h2>
           <label className="font-bold text-sm text-green-700 inline-flex items-center leading-9">
             <IconRole className="w-3 mr-1" />
@@ -54,7 +141,7 @@ export default function Projects() {
           </p>
 
           <h5 className="font-semibold mt-2">Key Responsibilities</h5>
-          <ul className="list-disc pl-4">
+          <ul className="list-disc pl-4 text-sm">
             <li>
               Communicate with customer to identify technical requirements.
             </li>
@@ -127,7 +214,7 @@ export default function Projects() {
           </p>
 
           <h5 className="font-semibold mt-2">Key Responsibilities</h5>
-          <ul className="list-disc pl-4">
+          <ul className="list-disc pl-4 text-sm">
             <li>
               Identify requirements and key goals of the applications with Key
               Stakeholders.
@@ -187,7 +274,7 @@ export default function Projects() {
           </p>
 
           <h5 className="font-semibold mt-2">Key Responsibilities</h5>
-          <ul className="list-disc pl-4">
+          <ul className="list-disc pl-4 text-sm">
             <li>
               Design UI / UX for efficient access of the portal and display data
               user friendly manner.
@@ -242,7 +329,7 @@ export default function Projects() {
           </p>
 
           <h5 className="font-semibold mt-2">Key Responsibilities</h5>
-          <ul className="list-disc pl-4">
+          <ul className="list-disc pl-4 text-sm">
             <li>
               Design and implement Asset Encryption / Decryption service with
               Sertainty Technology.
