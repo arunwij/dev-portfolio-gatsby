@@ -23,7 +23,7 @@ export default function Projects() {
           </label>
           <div className="mt-4 flex flex-wrap gap-3">
             <Badge label="Next.js" size="sm" className={badgeClassName} />
-            <Badge label="Tailwindcss" size="sm" className={badgeClassName} />
+            <Badge label="Tailwind CSS" size="sm" className={badgeClassName} />
             <Badge label="Typescript" size="sm" className={badgeClassName} />
             <Badge label="Lit Framework" size="sm" className={badgeClassName} />
             <Badge
