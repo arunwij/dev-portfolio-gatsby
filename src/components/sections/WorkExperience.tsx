@@ -10,10 +10,26 @@ export default function WorkExperience() {
       <div className="mt-6">
         <div className="border rounded-lg p-5">
           <ul className="list-disc pl-5">
+            {/* Mobex */}
+            <li>
+              <div className="mb-4">
+                <h2 className="font-bold text-lg">
+                  Consultant / Software Engineer
+                </h2>
+                <h3>2024 February - Present</h3>
+                <Link
+                  href="https://www.mobexhealth.com/"
+                  className="text-green-700 text-sm font-semibold"
+                >
+                  <h3>Mobex Health</h3>
+                </Link>
+              </div>
+            </li>
+            {/* Creative Software */}
             <li>
               <div className="mb-4">
                 <h2 className="font-bold text-lg">Technical Lead</h2>
-                <h3>2023 August - Present</h3>
+                <h3>2023 August - 2024 Feb</h3>
                 <Link
                   href="https://www.creativesoftware.com/"
                   className="text-green-700 text-sm font-semibold"

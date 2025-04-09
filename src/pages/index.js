@@ -67,13 +67,13 @@ const IndexPage = () => (
         }}
       />
       <Badge
-        label="Remix.run"
+        label="React"
         renderIconStart={({ className }) => {
           return <IconReact className={`${className} w-5 mr-2 text-blue-400`} />
         }}
       />
       <Badge
-        label="React"
+        label="Angular"
         renderIconStart={({ className }) => {
           return <IconReact className={`${className} w-5 mr-2 text-blue-400`} />
         }}
@@ -118,12 +118,6 @@ const IndexPage = () => (
         // }
       />
       <Badge
-        label="NoSQL"
-        renderIconStart={({ className }) => {
-          return <IconDb className={`${className} w-4 mr-2 text-red-400`} />
-        }}
-      />
-      <Badge
         label="SQL"
         renderIconStart={({ className }) => {
           return <IconDb className={`${className} w-4 mr-2 text-orange-400`} />
@@ -137,13 +131,12 @@ const IndexPage = () => (
       />
     </div>
     <p className="mt-8">
-      Hello there! I'm Aruna, a software engineer who's really into crafting
-      innovative solutions for real-world challenges. My journey in this field
-      is fueled by a mix of curiosity, creativity, and a strong drive for
-      excellence. I love turning ideas into something impactful. With a track
-      record of working on diverse projects and delivering top-notch results,
-      I'm all set to help take your next project from good to great. Ready to
-      make something amazing together? Let’s make it happen!
+      Hey, I’m Aruna – a software engineer with 7 years of experience in web and
+      cloud development. I specialize in building scalable, reliable solutions
+      and have worked on a variety of commercial and R&D projects. I enjoy
+      collaborating with teams and turning complex challenges into functional,
+      impactful products. If you’re working on something interesting and need a
+      hand, I’d love to be part of it. Let’s build something great together!
     </p>
 
     <div className="mt-8">

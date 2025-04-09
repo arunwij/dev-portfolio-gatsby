@@ -14,12 +14,84 @@ export default function Projects() {
   return (
     <Section>
       <SectionTitle label="Projects" />
+
+      <div className="mt-6">
+        <div className="border rounded-lg p-5">
+          <h2 className="font-bold text-xl">Mobex Health Data Platform</h2>
+          <label className="font-bold text-sm text-green-700 inline-flex items-center leading-9">
+            <IconRole className="w-3 mr-1" />
+            Full Stack Engineer
+          </label>
+          <div className="mt-4 flex flex-wrap gap-3">
+            <Badge label="AWS Glue" size="sm" className={badgeClassName} />
+            <Badge label="S3" size="sm" className={badgeClassName} />
+            <Badge label="AWS Athena" size="sm" className={badgeClassName} />
+            <Badge label="API Gateway" size="sm" className={badgeClassName} />
+            <Badge
+              label="Power BI Data Gateway"
+              size="sm"
+              className={badgeClassName}
+            />
+            <Badge
+              label="Serverless Framework"
+              size="sm"
+              className={badgeClassName}
+            />
+            <Badge label="React.js" size="sm" className={badgeClassName} />
+            <Badge label="Tailwind CSS" size="sm" className={badgeClassName} />
+            <Badge label="Typescript" size="sm" className={badgeClassName} />
+            <Badge label="DynamoDB" size="sm" className={badgeClassName} />
+          </div>
+          <p className="mt-4">
+            This platform serves as a unified data pipeline for healthcare
+            reporting. Designed and implemented a data pipeline and data lake
+            architecture to centralize healthcare data from various Mobex Health
+            applications, including provider web apps, patient management mobile
+            apps, order management system, and kiosks. The solution enabled
+            seamless integration with Power BI for reporting and analytics.
+            Responsibilities included architecting the pipeline, developing ETL
+            processes, and deploying infrastructure using Serverless Framework.
+          </p>
+        </div>
+      </div>
+
+      <div className="mt-6">
+        <div className="border rounded-lg p-5">
+          <h2 className="font-bold text-xl">
+            Mobex Health Order Management System
+          </h2>
+          <label className="font-bold text-sm text-green-700 inline-flex items-center leading-9">
+            <IconRole className="w-3 mr-1" />
+            Full Stack Engineer
+          </label>
+          <div className="mt-4 flex flex-wrap gap-3">
+            <Badge label="Angular" size="sm" className={badgeClassName} />
+            <Badge label="Node.js" size="sm" className={badgeClassName} />
+            <Badge label="MySQL" size="sm" className={badgeClassName} />
+            <Badge
+              label="AWS CodePipeline"
+              size="sm"
+              className={badgeClassName}
+            />
+          </div>
+          <p className="mt-4">
+            Worked on maintaining and enhancing the existing Order Management
+            System used across Mobex Health operations. Key contributions
+            included implementing new order types, adding a user impersonation
+            feature for support teams, integrating a notification system, and
+            connecting the platform with Salesforce. Also played a key role in
+            the cloud migration from Azure to AWS and ongoing bug fixes and
+            optimizations.
+          </p>
+        </div>
+      </div>
+
       <div className="mt-6">
         <div className="border rounded-lg p-5">
           <h2 className="font-bold text-xl">Ampd Platform</h2>
           <label className="font-bold text-sm text-green-700 inline-flex items-center leading-9">
             <IconRole className="w-3 mr-1" />
-            Technical Lead, Full Stack Engineer
+            Full Stack Engineer
           </label>
           <div className="mt-4 flex flex-wrap gap-3">
             <Badge label="Next.js" size="sm" className={badgeClassName} />
@@ -39,11 +111,10 @@ export default function Projects() {
             <Badge label="S3" size="sm" className={badgeClassName} />
           </div>
           <p className="mt-4">
-            AMPD aims to fill the gap in recurring income streams for a wide
-            range of content creators on Cardano (Blockchain), from artists to
-            developers, enabling them to monetize and grow their audience in the
-            web3 world. I was able to work with ampd team in three different
-            solutions.
+            AMPD is a platform that helps content creators build recurring
+            income streams and grow their audience in the Web3 space. I
+            contributed to three key solutions. This platform was built on the
+            Cardano blockchain.
             <ol className="py-2 space-y-2">
               <li>
                 <Link
@@ -53,9 +124,7 @@ export default function Projects() {
                 >
                   Ampd Landing Page
                 </Link>{" "}
-                <p className="text-sm">
-                  Develop bespoke responsive landing page for Ampd.
-                </p>
+                <p>Develop bespoke responsive landing page for Ampd.</p>
               </li>
               <li>
                 <Link
@@ -65,7 +134,7 @@ export default function Projects() {
                 >
                   Ampd ID
                 </Link>{" "}
-                <p className="text-sm">
+                <p>
                   Web 3 Authentication solution for Cardano blockchain
                   applications.
                 </p>
@@ -74,7 +143,7 @@ export default function Projects() {
                 <span className="font-semibold text-green-700 uppercase">
                   Ampd Sub
                 </span>{" "}
-                <p className="text-sm">
+                <p>
                   Ampd subscription dashboard where users can subscribe and
                   pledge funds to their favourite creators, developers. This
                   platform uses Ampd ID as the authentication solution.
@@ -84,19 +153,13 @@ export default function Projects() {
           </p>
 
           <h5 className="font-semibold mt-2">Key Responsibilities</h5>
-          <ul className="list-disc pl-4 text-sm">
+          <ul className="list-disc pl-4">
             <li>
               Communicate and collaborate with offshore development team to
-              identify technical requirements.
+              implement technical requirements.
             </li>
-            <li>Define project tasks and prioritize them.</li>
-            <li>Application architecture design.</li>
-            <li>Database design.</li>
-            <li>Manage Development, Staging and Production infrastructure.</li>
-            <li>Setting up and managing deployment pipelines.</li>
-            <li>UI development.</li>
-            <li>API development.</li>
-            <li>Produce technical documentations.</li>
+            <li>Full Stack Development</li>
+            <li>Produce technical documentation.</li>
           </ul>
         </div>
       </div>
@@ -136,12 +199,12 @@ export default function Projects() {
             Family Connect is health, wellness and family communication tablet
             for senior adults. As the senior population continually increases,
             this comprehensive software provides families with insight into the
-            lives of their senior family member and their health journey at
-            their fingertips
+            lives of their senior family member and their health journey at in
+            one place
           </p>
 
           <h5 className="font-semibold mt-2">Key Responsibilities</h5>
-          <ul className="list-disc pl-4 text-sm">
+          <ul className="list-disc pl-4">
             <li>
               Communicate with customer to identify technical requirements.
             </li>
@@ -214,13 +277,13 @@ export default function Projects() {
           </p>
 
           <h5 className="font-semibold mt-2">Key Responsibilities</h5>
-          <ul className="list-disc pl-4 text-sm">
+          <ul className="list-disc pl-4">
             <li>
               Identify requirements and key goals of the applications with Key
               Stakeholders.
             </li>
             <li>
-              Done R&D to identify tools and technologies to assist the
+              Conducted R&D to identify tools and technologies to assist the
               development team.
             </li>
             <li>Oversight technical development.</li>
@@ -257,7 +320,7 @@ export default function Projects() {
           <h2 className="font-bold text-xl">Fit Insights</h2>
           <label className="font-bold text-sm text-green-700 inline-flex items-center leading-9">
             <IconRole className="w-3 mr-1" />
-            Fullstack Engineer
+            Full Stack Engineer
           </label>
           <div className="mt-4 flex flex-wrap gap-3">
             <Badge label="React" size="sm" className={badgeClassName} />
@@ -274,7 +337,7 @@ export default function Projects() {
           </p>
 
           <h5 className="font-semibold mt-2">Key Responsibilities</h5>
-          <ul className="list-disc pl-4 text-sm">
+          <ul className="list-disc pl-4">
             <li>
               Design UI / UX for efficient access of the portal and display data
               user friendly manner.
@@ -329,7 +392,7 @@ export default function Projects() {
           </p>
 
           <h5 className="font-semibold mt-2">Key Responsibilities</h5>
-          <ul className="list-disc pl-4 text-sm">
+          <ul className="list-disc pl-4">
             <li>
               Design and implement Asset Encryption / Decryption service with
               Sertainty Technology.
@@ -349,36 +412,31 @@ export default function Projects() {
             href="https://www.deepdatainsight.com/products/#plexus"
             className="hover:underline hover:text-green-700"
           >
-            <h2 className="font-bold text-xl">Plexus | Fresh Chain</h2>
+            <h2 className="font-bold text-xl">Plexus</h2>
           </Link>
 
           <label className="font-bold text-sm text-green-700 inline-flex items-center leading-9">
             <IconRole className="w-3 mr-1" />
-            Blockchain R&D Engineer
+            R&D Engineer
           </label>
           <div className="mt-4 flex flex-wrap gap-3">
-            <Badge label="React" size="sm" className={badgeClassName} />
-            <Badge label="Redux" size="sm" className={badgeClassName} />
             <Badge
               label="Hyperledger Indy"
-              size="sm"
-              className={badgeClassName}
-            />
-            <Badge
-              label="Hyperledger Composer"
               size="sm"
               className={badgeClassName}
             />
             <Badge label="Node.js" size="sm" className={badgeClassName} />
             <Badge label="MongoDB" size="sm" className={badgeClassName} />
             <Badge label="Docker" size="sm" className={badgeClassName} />
+            <Badge label="React" size="sm" className={badgeClassName} />
+            <Badge label="Redux" size="sm" className={badgeClassName} />
           </div>
           <p className="mt-4">
-            Plexus is a cutting edge blockchain-backed Digital Identity
-            solution. Where an individual can own and control their own Identity
-            without depending on third parties. This platform creates a network
-            of Digital Identity Providers, Digital Identity Consumers, and
-            Validators.
+            Plexus is a blockchain-backed Digital Identity solution that
+            empowers individuals to own and control their identity without
+            relying on third parties. The platform connects Digital Identity
+            Providers, Consumers, and Validators in a secure network. This is a
+            R&D project developed on top of Hyperledger Indy Blockchain.
           </p>
         </div>
       </div>
